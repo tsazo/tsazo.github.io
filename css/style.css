@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.font-raleway {
+	font-family: 'Raleway', sans-serif;
+}
+
+.font-dosis {
+	font-family: 'Dosis', sans-serif;
+}
+
+/* Navigation bar CSS */
+header {
+	position: fixed;
+}
+
+nav {
+	width: 100vw;
+	overflow: auto;
+}
+
+nav a {
+	margin: 20px 15px;
+	padding: 8px;
+	text-decoration: none;
+	color: black;
+	float: right;
+	font-size: 18px;
+	transition: 0.3s;
+}
+
+nav a:hover {
+	color: grey;
+	transition: 0.3s;
+	letter-spacing: 1px;
+}
+
+#logo {
+	margin-left: 30px;
+	border: 1px solid black;
+	border-radius: 100%;
+	float: left;
+}
+
+#logo:hover, #contact:hover {
+	letter-spacing: 0px;
+	border-color: grey;
+}
+
+#contact {
+	margin-right: 30px;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+/* First section of main webpage */
+
+.fullscreen {
+	width: 100vw;
+} 
+
+.image-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+#homepage-image {
+	background: url(../img/IMG_5538.jpeg) no-repeat bottom;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#homepage-image h1 {
+	font-size: 50px;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+#homepage-image h1, #homepage-image h3, ul {
+	font-weight: normal;
+	margin: 0 auto;
+	color: white;
+	background-color: rgba(0,0,0, 0.4);
+}
+
+#homepage-image h3 {
+	text-align: center;
+}
+
+#homepage-image h3, ul {
+	font-size: 20px;
+	list-style: none;
+}
+
+/* Second section of main webpage */
+
+#summer-plans {
+	background-color: #A7C7E8;
+	height: 100vh;
+}
+
+
+/* This is for typewriter*/
+
+.line-1{ 
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+/* Animation */
+#typewriter-one{
+  animation: typewriter-one 1s steps(8) 1s 1 normal both,
+             blinkTextCursor 700ms steps(8) infinite normal;
+}
+
+#typewriter-two{
+  animation: typewriter-two 2s steps(15) 3s 1 normal both,
+             blinkTextCursor 700ms steps(15) infinite normal;
+}
+
+#typewriter-three{
+  animation: typewriter-three 3s steps(21) 5s 1 normal both,
+             blinkTextCursor 700ms steps(21) infinite normal;
+}
+
+@keyframes typewriter-one{
+  from{width: 0;}
+  to{width: 4em;}
+}
+
+@keyframes typewriter-two{
+  from{width: 0;}
+  to{width: 5.5em;}
+}
+
+@keyframes typewriter-three{
+  from{width: 0;}
+  to{width: 8.5em;}
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
