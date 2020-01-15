@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+html {
+	background-color: #A7C7E8;
+}
+
 .font-raleway {
 	font-family: 'Raleway', sans-serif;
 }
@@ -61,7 +65,7 @@ nav a:hover {
 	width: 100vw;
 } 
 
-.image-div {
+.container-div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -96,14 +100,6 @@ nav a:hover {
 	list-style: none;
 }
 
-/* Second section of main webpage */
-
-#summer-plans {
-	background-color: #A7C7E8;
-	height: 100vh;
-}
-
-
 /* This is for typewriter*/
 
 .line-1{ 
@@ -114,28 +110,28 @@ nav a:hover {
 
 /* Animation */
 #typewriter-one{
-  animation: typewriter-one 1s steps(8) 1s 1 normal both,
-             blinkTextCursor 700ms steps(8) infinite normal;
+  animation: typewriter-one 1.5s steps(9) 1s 1 normal both,
+             blinkTextCursor 700ms steps(9) infinite normal;
 }
 
 #typewriter-two{
-  animation: typewriter-two 2s steps(15) 3s 1 normal both,
-             blinkTextCursor 700ms steps(15) infinite normal;
+  animation: typewriter-two 1.8s steps(10) 3s 1 normal both,
+             blinkTextCursor 700ms steps(10) infinite normal;
 }
 
 #typewriter-three{
-  animation: typewriter-three 3s steps(21) 5s 1 normal both,
-             blinkTextCursor 700ms steps(21) infinite normal;
+  animation: typewriter-three 3s steps(20) 6s 1 normal both,
+             blinkTextCursor 700ms steps(20) infinite normal;
 }
 
 @keyframes typewriter-one{
   from{width: 0;}
-  to{width: 4em;}
+  to{width: 3.9em;}
 }
 
 @keyframes typewriter-two{
   from{width: 0;}
-  to{width: 5.5em;}
+  to{width: 5.3em;}
 }
 
 @keyframes typewriter-three{
@@ -146,4 +142,38 @@ nav a:hover {
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
+}
+
+/* Second section of main webpage */
+
+#summer-plans {
+	background-color: #A7C7E8;
+	height: 100vh;
+	justify-content: space-around;
+}
+
+#summer-plans h2 {
+	font-size: 50px;
+	margin: 30px auto;
+}
+
+#summer-information {
+	display: flex;
+	width: 90vw;
+	margin: 0 auto;
+	justify-content: space-around;
+}
+
+#summer-information i {
+	font-size: 300px;
+	color: white;
+}
+
+#summer-information div {
+	width: 50vw;
+	padding: 20px 0px;
+}
+
+#summer-information h3 {
+	text-align: center;
 }
