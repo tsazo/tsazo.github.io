@@ -109,29 +109,29 @@ nav a:hover {
 }
 
 /* Animation */
-#typewriter-one{
-  animation: typewriter-one 1.5s steps(9) 1s 1 normal both,
-             blinkTextCursor 700ms steps(9) infinite normal;
+#homepage-image li:nth-child(1){
+	animation: typewriter-one 1.5s steps(9, end) 1s 1 normal both,
+            blinkTextCursor 700ms steps(9, end) infinite normal;
 }
 
-#typewriter-two{
-  animation: typewriter-two 1.8s steps(10) 3s 1 normal both,
-             blinkTextCursor 700ms steps(10) infinite normal;
+#homepage-image li:nth-child(2){
+  	animation: typewriter-two 1.8s steps(10, end) 3s 1 normal both,
+            blinkTextCursor 700ms steps(10, end) infinite normal;
 }
 
-#typewriter-three{
-  animation: typewriter-three 3s steps(20) 6s 1 normal both,
-             blinkTextCursor 700ms steps(20) infinite normal;
+#homepage-image li:nth-child(3){
+  	animation: typewriter-three 3s steps(20, end) 6s 1 normal both,
+            blinkTextCursor 700ms steps(20, end) infinite normal;
 }
 
 @keyframes typewriter-one{
   from{width: 0;}
-  to{width: 3.9em;}
+  to{width: 4em;}
 }
 
 @keyframes typewriter-two{
   from{width: 0;}
-  to{width: 5.3em;}
+  to{width: 5.5em;}
 }
 
 @keyframes typewriter-three{
@@ -167,6 +167,7 @@ nav a:hover {
 }
 
 #summer-information i {
+	align-self: center;
 	font-size: 300px;
 	color: white;
 }
@@ -182,4 +183,10 @@ nav a:hover {
 	font-size: 35px;
 	margin-bottom: 20px;
 	color: white;
+}
+
+/* Third section of main webpage */
+
+#education {
+	background-color: #809BCE;
 }
